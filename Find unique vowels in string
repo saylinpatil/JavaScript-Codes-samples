@@ -1,0 +1,22 @@
+let string ="Sayali";
+let smallCase=string.toLowerCase();
+let arrString=Array.from(smallCase);
+count=0
+let uniquevowel="";
+
+for(let i=0;i<arrString.length;i++){
+  ch=arrString.at(i);
+  
+  if((ch=='a'||ch=='e'||ch=='i'||ch=='u')&& (uniquevowel.indexOf(ch)==-1))
+   {
+    count++;
+    uniquevowel+=ch;
+   }
+  
+}
+console.log("Vowels in String- " +uniquevowel)
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Output:
+Vowels in String- ai
