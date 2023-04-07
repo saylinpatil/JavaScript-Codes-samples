@@ -1,0 +1,28 @@
+let string = "Sayali";
+let smallCase = string.toLowerCase();
+let vowels = ['a', 'e', 'i', 'o', 'u'];
+let count = {};
+
+for (let i = 0; i < smallCase.length; i++) {
+  let ch = smallCase.charAt(i);
+  if (vowels.includes(ch)) {
+    
+    if (count[ch]) {
+      count[ch]++;
+    } else {
+      count[ch] = 1;
+    }
+    
+  }
+}
+
+console.log("Vowels in String- " + Object.keys(count) +
+"\n their occurrence count is:-");
+console.log(count);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Output:
+Vowels in String- a,i
+ their occurrence count is:-
+{ a: 2, i: 1 }
