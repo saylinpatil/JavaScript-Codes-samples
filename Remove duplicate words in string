@@ -1,0 +1,23 @@
+let string = "java,javascript,springboot,hibernate,java,javascript,mysql";
+console.log(string);
+
+let arrString = string.split(',');
+
+let uniqueArr = "";
+
+for (let i = 0; i < arrString.length; i++) {
+
+  if (uniqueArr.indexOf(arrString[i]) == -1) {
+  uniqueArr+=arrString[i]+",";
+  }
+}
+
+console.log(uniqueArr.slice(0,-1)); 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Output:
+
+java,javascript,springboot,hibernate,java,javascript,mysql
+java,javascript,springboot,hibernate,mysql
