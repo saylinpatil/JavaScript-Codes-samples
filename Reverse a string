@@ -1,0 +1,24 @@
+let sentence="This is javascript code";
+
+let arrSentence=Array.from(sentence);
+console.log(arrSentence);
+
+let reverseString="";
+
+for(let i=arrSentence.length-1;i>=0;i--){
+  reverseString+=arrSentence[i]+"";
+}
+console.log(reverseString);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Output:
+
+[
+  'T', 'h', 'i', 's', ' ',
+  'i', 's', ' ', 'j', 'a',
+  'v', 'a', 's', 'c', 'r',
+  'i', 'p', 't', ' ', 'c',
+  'o', 'd', 'e'
+]
+edoc tpircsavaj si sihT
