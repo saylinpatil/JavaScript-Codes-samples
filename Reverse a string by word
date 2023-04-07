@@ -1,0 +1,17 @@
+let sentence="This is javascript code";
+let arrSentence=sentence.split(' ');
+console.log(arrSentence);
+
+let reverseWord="";
+
+for(let i=arrSentence.length-1;i>=0;i--){
+  reverseWord+=arrSentence[i]+ "  ";
+  }
+console.log(reverseWord);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Output:
+
+[ 'This', 'is', 'javascript', 'code' ]
+code  javascript  is  This  
