@@ -1,0 +1,56 @@
+let name="Sayali";
+let nameLowCase=name.toLowerCase();
+let arrName=Array.from(nameLowCase);
+//console.log(arrName);
+countA=0;
+countE=0;
+countI=0;
+countO=0;
+countU=0;
+count=0;
+uniqeVowels="";
+
+for(let i=0;i<arrName.length;i++){
+  
+  ch=arrName[i];
+  //console.log(ch);
+  if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+    
+    if(uniqeVowels.indexOf(ch)==-1){
+      count++;
+      uniqeVowels+=ch;
+    }
+    
+    switch(ch){
+            case 'a': countA++;
+                      break;
+            case 'e': countE++;
+                      break;
+            case 'i': countI++;
+                      break;
+            case 'o': countO++;
+                      break;
+            case 'u': countU++;
+                      break;
+    }
+    
+  }
+}
+console.log("Unique vowels in string- "+uniqeVowels+"\n"
+ +"Count of Unique vowels- "+count);
+ console.log("a- "+countA);
+ console.log("e- "+countE);
+ console.log("i- "+countI);
+ console.log("o- "+countO);
+ console.log("u- "+countU);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+Output:
+Unique vowels in string- ai
+Count of Unique vowels- 2
+a- 2
+e- 0
+i- 1
+o- 0
+u- 0
