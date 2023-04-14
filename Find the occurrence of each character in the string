@@ -1,0 +1,60 @@
+let string="JavaScript follows the rules and specifications of the ECMAScript standard";
+
+let stringLowCase = string.toLowerCase();
+console.log(stringLowCase);
+
+let stringRemSpace = stringLowCase.replaceAll(" ","");
+console.log(stringRemSpace);
+
+let stringArr=Array.from(stringRemSpace);
+console.log(stringArr);
+
+for(let i=0;i<stringArr.length;i++){
+  let count=1; 
+  
+  for(let j=i+1;j<stringArr.length-1;j++){
+    
+    if(stringArr[i]==stringArr[j]){
+       count++;
+      stringArr.splice(j,1);
+      j--;
+    }
+    
+  }
+  console.log("Occurance of character " +stringArr[i] +" is- "+count);
+}
+
+Output:
+
+javascript follows the rules and specifications of the ecmascript standard
+javascriptfollowstherulesandspecificationsoftheecmascriptstandard
+[
+  'j', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p',
+  't', 'f', 'o', 'l', 'l', 'o', 'w', 's', 't',
+  'h', 'e', 'r', 'u', 'l', 'e', 's', 'a', 'n',
+  'd', 's', 'p', 'e', 'c', 'i', 'f', 'i', 'c',
+  'a', 't', 'i', 'o', 'n', 's', 'o', 'f', 't',
+  'h', 'e', 'e', 'c', 'm', 'a', 's', 'c', 'r',
+  'i', 'p', 't', 's', 't', 'a', 'n', 'd', 'a',
+  'r', 'd'
+]
+Occurance of character j is- 1
+Occurance of character a is- 7
+Occurance of character v is- 1
+Occurance of character s is- 7
+Occurance of character c is- 5
+Occurance of character r is- 4
+Occurance of character i is- 5
+Occurance of character p is- 3
+Occurance of character t is- 6
+Occurance of character f is- 3
+Occurance of character o is- 4
+Occurance of character l is- 3
+Occurance of character w is- 1
+Occurance of character h is- 2
+Occurance of character e is- 5
+Occurance of character u is- 1
+Occurance of character n is- 3
+Occurance of character d is- 2
+Occurance of character m is- 1
+Occurance of character d is- 1
