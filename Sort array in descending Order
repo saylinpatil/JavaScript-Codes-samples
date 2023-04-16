@@ -1,0 +1,23 @@
+let arr=[3,5,22,43,65,87,9,5,66,75,8,2,7];
+
+let temp;
+for(let i=0;i<arr.length;i++){
+  for(let j=i+1;j<arr.length;j++){
+    
+    if(arr[i]<arr[j])
+     {
+      temp=arr[j];
+      arr[j]=arr[i];
+      arr[i]=temp;
+     }
+  }
+}
+console.log(arr);
+
+Output:
+
+[
+  87, 75, 66, 65, 43, 22,
+   9,  8,  7,  5,  5,  3,
+   2
+]
