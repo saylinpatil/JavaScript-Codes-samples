@@ -1,0 +1,12 @@
+let arr=[3,5,22,43,65,87,9,5,66,75,8,2,7];
+
+let sortArray=arr.sort((a,b)=>b-a);
+console.log(sortArray);
+
+Output:
+
+[
+  87, 75, 66, 65, 43, 22,
+   9,  8,  7,  5,  5,  3,
+   2
+]
