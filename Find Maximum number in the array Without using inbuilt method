@@ -1,0 +1,14 @@
+let arr=[3,5,22,43,65,87,9,5,66,75,8,2,7];
+let max=arr[0];
+
+for(let i=0;i<arr.length;i++)
+    {
+        if(arr[i]>max){
+         max=arr[i];
+    }
+}
+console.log("Maximum number of array is- "+max);
+
+Output:
+
+Maximum number of array is- 87
