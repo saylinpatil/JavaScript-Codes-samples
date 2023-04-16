@@ -1,0 +1,9 @@
+let arr=[3,5,22,43,65,87,9,5,66,75,8,2,7];
+
+let min =Math.min(...arr);
+console.log(min);
+
+
+Output:
+
+2
