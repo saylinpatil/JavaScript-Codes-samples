@@ -1,0 +1,9 @@
+let arr=[1,4,2,5,4,2,"Java","Javascript",5,7,6,8,5,"java"];
+
+let uniArray=arr.filter((element,index)=>arr.indexOf(element)===index);
+
+console.log(uniArray);
+
+Output:
+
+[ 1, 4, 2, 5, 'Java', 'Javascript', 7, 6, 8 ]
