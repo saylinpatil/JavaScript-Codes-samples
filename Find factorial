@@ -1,0 +1,14 @@
+let n=5;
+
+if(n==0||n==1){
+  return 1;
+}
+
+let fact=1;
+
+while(n>1)
+{
+  fact=fact*n;
+  n--;
+}
+console.log(fact);
