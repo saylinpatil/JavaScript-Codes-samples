@@ -1,0 +1,13 @@
+let arr=[23,4,6,8,9,20,45,9,3,22];
+let min=arr[0];
+
+for(let i=0;i<arr.length;i++){
+  if(arr[i]< min){
+    min=arr[i];
+  }
+}
+console.log("Minimum number in the array is - "+min);
+
+Output:
+
+Minimum number in the array is - 3
