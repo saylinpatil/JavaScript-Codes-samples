@@ -1,0 +1,15 @@
+let arr1=[1,2,5,6,3,8];
+
+let arr2=[11,15,5,6,17];
+
+let unique = [...arr1,...arr2];
+
+let dupNum=unique.filter((element,index)=>unique.indexOf(element)!==index);
+
+console.log(dupNum);
+
+///////////////////////////////////////////////
+
+Output:
+
+[ 5, 6 ]
