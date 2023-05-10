@@ -10,5 +10,4 @@ for(let i=0;i<arr.length;i++)
 console.log("Maximum number of array is- "+max);
 
 Output:
-
 Maximum number of array is- 87
