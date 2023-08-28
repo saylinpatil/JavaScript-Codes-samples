@@ -1,0 +1,16 @@
+let arr1 = [2,3,6,7,3,2]
+let arr2 = [3,7,9,2]
+let combine = [...arr1, ...arr2]
+let result = []
+
+for(let i=0; i<combine.length; i++){
+    let element = combine[i];
+    
+     let firstIndex = combine.indexOf(element);
+     let lastIndex = combine.lastIndexOf(element); 
+
+     if (firstIndex == lastIndex) {
+        result.push(element);
+    }
+}
+console.log(result)
