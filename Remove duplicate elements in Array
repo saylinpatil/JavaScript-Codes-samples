@@ -1,4 +1,4 @@
-let arr=[1,4,2,5,4,2,"Java","Javascript",5,7,6,8,5,"java"];
+let arr=[1,4,2,5,4,2,"Java","Javascript",5,7,6,8,5,"Java"];
 
 let uniArray=arr.filter((element,index)=>arr.indexOf(element)===index);
 
