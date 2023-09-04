@@ -3,16 +3,16 @@ console.log(string);
 
 let arrString = string.split(',');
 
-let uniqueArr = "";
+let uniqueString = "";
 
 for (let i = 0; i < arrString.length; i++) {
 
-  if (uniqueArr.indexOf(arrString[i]) == -1) {
-  uniqueArr+=arrString[i]+",";
+  if (uniqueString.indexOf(arrString[i]) == -1) {
+  uniqueString+=arrString[i]+",";
   }
 }
 
-console.log(uniqueArr.slice(0,-1)); 
+console.log(uniqueString.slice(0,-1)); 
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
