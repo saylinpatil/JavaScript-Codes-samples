@@ -1,0 +1,15 @@
+let arr = [1,2,5,6,3,8,11,15,5,6,17,6];
+
+let dupArr = [];
+
+for(let i = 0; i < arr.length; i++){
+  for(let j = i+1; j < arr.length; j++) {
+     if((arr[i] == arr[j]) && !(dupArr.includes(arr[i]))) {
+        dupArr.push(arr[i]);
+       }
+    }
+}
+console.log(dupArr);
+
+Output -
+[ 5, 6 ]
