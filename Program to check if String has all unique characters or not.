@@ -1,0 +1,19 @@
+function checkIfUniqueChar(string) {
+    
+    let arr = string.split("");
+    let uniString = "";
+    for(let i = 0; i < arr.length; i++){
+        
+        if(uniString.indexOf(arr[i]) == -1){
+            uniString += arr[i];
+        } else {
+            return "Not all characters are unique in the string";
+       }
+    }
+    return "All characters are unique in the string";
+}
+
+console.log(checkIfUniqueChar("sayli"))
+
+Output -
+All characters are unique in the string
