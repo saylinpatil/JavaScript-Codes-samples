@@ -1,0 +1,10 @@
+let string = "";
+
+if(string.length == 0){
+    console.log("String is empty")
+} else {
+    console.log("String is not empty")
+}
+
+Output -
+String is empty
