@@ -1,0 +1,10 @@
+let num = 8;
+
+if(num > 5){
+    console.log("Number is greater than 5")
+} else {
+    console.log("Number is Not greater than 5")
+}
+
+Output -
+Number is greater than 5
