@@ -1,0 +1,19 @@
+let candidate = {
+  firstName: "sayali",
+  lastName: "patil",
+  age: 22,
+  occupation: "Software Engineer",
+  city: "Pune",
+  role: "Full Stack javaScript Developer"
+};
+
+
+function getObjectProperties(object) {
+  return Object.keys(object);
+}
+
+let result = getObjectProperties(candidate);
+console.log(result);
+
+Output -
+[ 'firstName', 'lastName', 'age', 'occupation', 'city', 'role' ]
