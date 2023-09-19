@@ -1,0 +1,10 @@
+function lengthOfString(string) {
+    replaceSpaceOfString = string.replaceAll(" ", "");
+    
+    return replaceSpaceOfString.length;
+}
+let result = lengthOfString("I am Full Stack JavaScript devloper");
+console.log(result);
+
+Output -
+30
