@@ -1,0 +1,11 @@
+let arr = [2, 5, 3, 7, 1, 9, 10];
+
+function lengthOfArray(arr) {
+     return arr.length;
+}
+
+let result = lengthOfArray(arr);
+console.log(result); 
+
+Output -
+7
