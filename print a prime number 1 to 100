@@ -1,0 +1,42 @@
+for(let i = 2; i <= 100; i++) {
+    let count = 0;
+    
+    for(let j = 2; j <= i/2; j++){
+        if(i % j == 0){
+            count++;
+        }
+    }
+    if(count <=1) {
+    console.log(i, "is prime number")
+    }
+}
+Output -
+2 is prime number
+3 is prime number
+4 is prime number
+5 is prime number
+7 is prime number
+9 is prime number
+11 is prime number
+13 is prime number
+17 is prime number
+19 is prime number
+23 is prime number
+25 is prime number
+29 is prime number
+31 is prime number
+37 is prime number
+41 is prime number
+43 is prime number
+47 is prime number
+49 is prime number
+53 is prime number
+59 is prime number
+61 is prime number
+67 is prime number
+71 is prime number
+73 is prime number
+79 is prime number
+83 is prime number
+89 is prime number
+97 is prime number
