@@ -1,0 +1,14 @@
+let first = 10;
+let second = 20;
+console.log("Before Swap First:",first, "Second:",second);
+
+first = first + second;
+second = first - second;
+first = first -second
+
+console.log("After Swap First:",first, "Second:",second);
+
+Output -
+
+Before Swap First: 10 Second: 20
+After Swap First: 20 Second: 10
