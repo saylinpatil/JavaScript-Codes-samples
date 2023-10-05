@@ -1,0 +1,16 @@
+let obj = {
+    name: "sayali"
+}
+
+let name = {
+    name: "patil",
+    callFun: function () {
+        console.log(this.name)
+    }
+}
+
+let output = name.callFun.bind(obj);
+output(); 
+
+Output-
+sayali
