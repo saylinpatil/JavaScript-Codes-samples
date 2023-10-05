@@ -1,0 +1,14 @@
+let obj = {
+    name:"sayali"
+}
+
+let objName = {
+    name:"patil",
+    callFun: function(age) {
+        console.log(this.name, age)
+    }
+}
+ objName.callFun.apply(obj, [67])
+
+Output-
+sayali 67
