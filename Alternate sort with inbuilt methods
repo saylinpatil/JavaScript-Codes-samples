@@ -1,0 +1,13 @@
+let arr = [1, 6, 9, 4, 3, 7, 8, 2];
+let output = [];
+
+arr.sort((a, b) => a -b)
+
+while (arr.length > 0) {
+   output.push(arr.pop())
+   output.push(arr.shift());
+}
+console.log(output.join(","))
+
+Output:-
+9,1,8,2,7,3,6,4
