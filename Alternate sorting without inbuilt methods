@@ -22,3 +22,6 @@ while (minIndex <= maxIndex) {
     minIndex++;
 }
 console.log(output.join(","));
+
+Output-
+9,1,8,2,7,3,6,4
