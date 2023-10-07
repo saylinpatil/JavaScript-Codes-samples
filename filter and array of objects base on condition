@@ -1,0 +1,34 @@
+let students = [
+    {
+        name: "sayali",
+        age: 23
+    },
+    {
+        name: "glara",
+        age: 24
+    },
+    {
+        name: "archana",
+        age: 38
+    },
+    {
+        name: "sonam",
+        age: 46
+    },
+    {
+        name: "rina",
+        age: 20
+    }
+];
+let result = students.filter((item) => {
+    return item.age > 21;
+})
+console.log(result);
+
+Output -
+[
+  { name: 'sayali', age: 23 },
+  { name: 'glara', age: 24 },
+  { name: 'archana', age: 38 },
+  { name: 'sonam', age: 46 }
+]
