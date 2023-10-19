@@ -22,5 +22,6 @@ while (minIndex <= maxIndex) {
     minIndex++;
 }
 console.log(output.join(" "));
+
 Output-
 v a k b g d
