@@ -10,7 +10,7 @@ for(let i = 2; i <= 100; i++) {
     console.log(i, "is prime number")
     }
 }
-Output -
+Output: -
 2 is prime number
 3 is prime number
 4 is prime number
