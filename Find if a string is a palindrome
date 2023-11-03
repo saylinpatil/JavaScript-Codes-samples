@@ -1,0 +1,16 @@
+let string = 'level';
+let reversedString = ""
+
+for(let i = string.length-1; i >= 0; i--) {
+    reversedString += string[i]
+}
+
+if(string == reversedString) {
+  console.log("This string is palindrome")
+} else {
+  console.log("This string is not palindrome")
+}
+
+Output:
+
+This string is palindrome
