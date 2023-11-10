@@ -1,0 +1,16 @@
+function isNumericPalindrome(number) {
+    let numString = number.toString();
+    let reversedString = numString.split('').reverse().join('');
+    return numString === reversedString;
+}
+
+
+if (isNumericPalindrome(121990)) {
+    console.log("is a numeric palindrome.");
+} else {
+    console.log("is not a numeric palindrome.");
+}
+
+Output:
+
+is not a numeric palindrome.
