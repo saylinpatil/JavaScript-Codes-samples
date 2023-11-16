@@ -1,0 +1,7 @@
+let inputString = "sayali 24 patil";
+let result = inputString.replace(/[^0-9]/g, "").length
+
+console.log(result)
+
+Output:
+2
