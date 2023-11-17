@@ -1,0 +1,18 @@
+let inputString = "sayali patil"
+
+function calOccuranceOFChar(char, inputString) {
+  let count = 0;
+
+  for (let i = 0; i <= inputString.length; i++) {
+    if (char == inputString[i]) {
+      count++;
+    }
+  }
+  return count;
+};
+
+let result = calOccuranceOFChar("a", inputString)
+console.log(result)
+
+Output:
+3
