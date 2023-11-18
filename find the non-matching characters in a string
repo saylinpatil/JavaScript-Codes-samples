@@ -1,0 +1,12 @@
+let inputString = "sayali patil 34 @ $ %";
+
+function nonMatchingChar(inputString) {
+  let nonMatchChar = inputString.replace(/[a-zA-Z\s]/g, "");
+  return nonMatchChar;
+};
+
+let result = nonMatchingChar(inputString);
+console.log(result);
+
+Output:
+34@$%
