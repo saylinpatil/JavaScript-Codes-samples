@@ -1,0 +1,11 @@
+let inputString1 = "heart"
+let inputString2 = "earth"
+
+let res1 = inputString1.split('').sort().join('')
+let res2 = inputString2.split('').sort().join('')
+let result = res1 == res2;
+console.log(result);
+
+Output:
+
+true
