@@ -1,0 +1,24 @@
+let inputString = "sayali Nitin Patil";
+let inputStringLowerCase = (inputString.toLowerCase()).replace(/\s/g, "");
+let vowelsInString = [];
+let consonantsInString = [];
+
+for(let i = 0; i <= inputStringLowerCase.length-1; i++) {
+  let ch = inputStringLowerCase[i];
+  
+  if(ch == 'a' || ch == 'e'|| ch == 'i' || ch == 'o' || ch == 'u') {
+    if(!vowelsInString.includes(ch)) {
+      vowelsInString.push(ch)
+    }
+  } else {
+    if(!consonantsInString.includes(ch)) {
+      consonantsInString.push(ch)
+    }
+  }
+}
+console.log('vowels In String:- ', vowelsInString.join(' '));
+console.log('consonants In String:- ', consonantsInString.join(' '));
+
+Output:
+vowels In String:-  a i
+consonants In String:-  s y l n t p
