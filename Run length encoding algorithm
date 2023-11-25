@@ -1,0 +1,16 @@
+let inputString = "wwwwaaadexxxxxxywww";
+let result = "";
+let count = 1;
+
+for(let i = 0; i <= inputString.length; i++) {
+  if(inputString[i] == inputString[i + 1]) {
+    count++
+  } else {
+    result += count + inputString[i];
+    count = 1;
+  }
+}
+console.log(result);
+
+Output:
+4w3a1d1e6x1y3w
