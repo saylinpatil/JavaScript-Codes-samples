@@ -1,0 +1,9 @@
+function usernameValidation(str) { 
+let string  = str.replace(/[^a-zA-Z0-9_]/g, '');
+  return string.length >= 4 && string.length <= 25; 
+}
+console.log(usernameValidation("aaaaaaaaaa"));
+
+Output:
+
+true
