@@ -18,7 +18,7 @@ let students = [
     {
         name: "rina",
         age: 20
-    }
+    } 
 ];
 let result = students.find((item) => {
     return item.age == 20;
