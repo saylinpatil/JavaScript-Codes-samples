@@ -12,4 +12,4 @@ for(let i=0; i<arr.length; i++) {
 console.log(arr)
 
 Output-
-[ 'a', 'b', 'd', 'g', 'k', 'v' ]
+[ 'a', 'b', 'd', 'g', 'k', 'v' ] 
