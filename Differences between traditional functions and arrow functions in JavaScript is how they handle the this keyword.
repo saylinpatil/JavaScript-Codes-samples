@@ -1,0 +1,26 @@
+//Example with Traditional Fucntion
+function traditionalFunction() {
+  this.value = 3;
+     let value = 4
+   setTimeout(function() {
+    this.value++;
+    console.log("Traditional Function:", this.value);
+  }, 1000);
+} // Inside setTimeout, "this" would refer to the global object or undefined (in strict mode)
+
+// Example with Arrow function
+function arrowFunction() {
+  this.value = 8;
+  setTimeout(() => {
+    this.value++;
+    console.log("Arrow Function:", this.value);
+  }, 1000);  // Inside setTimeout, arrow function inherits "this" from the surrounding scope
+
+// Instantiate objects
+let traditionalObj = new traditionalFunction();
+let arrowObj = new arrowFunction();
+
+Output:
+
+Traditional Function: NaN
+Arrow Function: 9
